@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PikachuDéx - KK</title>
+
+    <!-- js script files -->
+    <script defer src="script/script.js"></script>
+    <script defer src="script/header.js"></script>
+    <script defer src="script/filter.js"></script>
+    <script defer src="script/showMorePokemons.js"></script>
+    <script defer src="script/IdCard.js"></script>
+    <script defer src="script/switchBetweenCards.js"></script>
+    <!-- css files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body onload="init()">
+    <div id="pokedex-loading-space-above">
+        <div w3-include-html="header.html"></div>
+        <div id="pokedex-loading-space">
+
+        </div>
+        <div id="last-section">
+            <button id="showTenMore" onclick="showTenMoreWithDelay()">Load 10 more ...</button>
+            <div id="loading-card"></div>
+        </div>
+    </div>
+</body>
+
+</html>
